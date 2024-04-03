@@ -1,0 +1,158 @@
+*, :root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: 'Roboto', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --border: 1px solid #FFFFFF1a;
+}
+
+
+body {
+  background-color: #121214;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 720px;
+
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+form {
+  padding: 20px 0;
+
+  border: var(--border);
+  border-inline: none;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend,
+section h2 {
+  padding-bottom: 16px;
+
+  font: 700 16px/140% 'Roboto', sans-serif;
+  color: #E1E1E6;
+}
+
+fieldset > div {
+  display: flex;
+  gap: 12px;
+}
+
+fieldset button {
+  width: fit-content;
+  border: 0;
+
+  padding: 7px 20px;
+
+  background: #F48F56;
+  font: 700 12px/24px 'Roboto', sans-serif;
+  color: #00292E;
+  border-radius: 10px;
+}
+
+fieldset button:hover {
+  cursor: pointer;
+
+  background: #F37C37;
+}
+
+.participants-list {
+  padding: 20px 0;
+}
+
+.participants-list > div {
+  border: var(--border);
+  border-radius: 10px
+}
+
+input {
+  all: unset;
+}
+
+.input-wrapper {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 12px;
+  padding: 8px 12px;
+
+  font: 400 14px/150% 'Roboto', sans-serif;
+  color: #C4C4CC;
+  border: var(--border);
+  border-radius: 10px;
+  
+}
+
+.input-wrapper i {
+  width: 16px;
+  height: 16px;
+
+  color: #9FF9CC;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+thead th,
+tbody td {
+  padding: 12px 16px;
+}
+
+tbody td {
+  font-size: 14px;
+  line-height: 14px;
+ 
+  border-top: var(--border);
+  color: #C4C4CC
+}
+
+tbody td strong {
+  font: 14px;
+  line-height: 16px;
+  font-weight: 600;
+
+  color: #FFFFFF;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+
+  color: #9FF9CC;
+}
+
+tbody td button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
