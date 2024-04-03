@@ -98,13 +98,10 @@ const creatNewParticipant = (participant) => {
 
 const updateList = (participants) => {
   let output = ""
-  // loop // cria obj participante de participantes 
   for(let participant of participants) {
-    // output (saída) + participantes da lista, retorna loop
     output = output + creatNewParticipant(participant)
   }
 
-  // seleciona o tbody e transforma em alo
   document
   .querySelector('tbody')
   .innerHTML = output
@@ -113,11 +110,8 @@ const updateList = (participants) => {
 updateList(participants)
 
 const addParticipant = (event) => {
-  // cancela o evento padrão do navegador de executar a chamada
   event.preventDefault()
 
-  // cria o obj que coleta as infos do form no html
-  // através do elemento que desencadeia (forms)
   const formData = new FormData(event.target)
 
   const participant = {
@@ -136,8 +130,6 @@ const addParticipant = (event) => {
     return
   }
 
-
-  // adiciona os dados do input na lista de let participants
   participants = [participant, ...participants]
   updateList(participants)
 
@@ -151,7 +143,6 @@ const makeCheckIn = (event) => {
     return
   }
 
-  // procura da lista inteira o evento desencadeado, verifica se o email selecionado é o mesmo do desencadeado 
   const participant = participants.find(
     (p) => p.email == event.target.dataset.email
   )
